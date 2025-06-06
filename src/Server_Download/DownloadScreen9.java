@@ -6,6 +6,7 @@
 package Server_Download;
 
 import Config.usables;
+import Startups.Start;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ComponentAdapter;
@@ -175,8 +176,8 @@ public class DownloadScreen9 extends javax.swing.JFrame {
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
     
         use.delay(3, () -> {
-            DownloadScreen10 ds10 = new DownloadScreen10();
-            ds10.setVisible(true);
+            Start s = new Start();
+            s.setVisible(true);
             this.dispose();
         });
     }//GEN-LAST:event_formWindowActivated

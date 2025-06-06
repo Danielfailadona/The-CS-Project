@@ -412,8 +412,8 @@ public class DownloadScreen6 extends javax.swing.JFrame {
                     }
 
                     // 🧭 The Portal Opens
-                    DownloadScreen2 ds2 = new DownloadScreen2();
-                    ds2.setVisible(true);
+                    DownloadScreen7 ds7 = new DownloadScreen7();
+                    ds7.setVisible(true);
                     this.dispose();
                 } else {
                     JOptionPane.showMessageDialog(null, "No data found for selected item.");

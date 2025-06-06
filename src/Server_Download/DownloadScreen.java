@@ -27,7 +27,7 @@ public class DownloadScreen extends javax.swing.JFrame {
     public DownloadScreen() {
         
         
-        JOptionPane.showMessageDialog(null, "This is Server Download");
+//        JOptionPane.showMessageDialog(null, "This is Server Download");
         initComponents(); // I summon thee
         this.setResizable(false); // Lock diminutive Form
 
@@ -165,7 +165,7 @@ public class DownloadScreen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-        
+//        
     }//GEN-LAST:event_formWindowActivated
 
     private void Button1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseEntered

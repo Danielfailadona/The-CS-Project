@@ -208,7 +208,7 @@ public class ClientDownloadScreen4 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
-        JOptionPane.showMessageDialog(null, "Note that you Delete in actual installation, no need to format");
+//          JOptionPane.showMessageDialog(null, "Note that you Delete in actual installation, no need to format");
         ClientDownloadScreen5 ds5 = new ClientDownloadScreen5();
         ds5.setVisible(true);
         this.dispose();

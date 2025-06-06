@@ -237,7 +237,7 @@ public class DownloadScreen5 extends javax.swing.JFrame {
     }//GEN-LAST:event_Button1MouseExited
 
     private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
-        JOptionPane.showMessageDialog(null, "Note that you Format-Delete in actual installation");
+//        JOptionPane.showMessageDialog(null, "Note that you Format-Delete in actual installation");
         DownloadScreen6 ds6 = new DownloadScreen6();
         ds6.setVisible(true);
         this.dispose();

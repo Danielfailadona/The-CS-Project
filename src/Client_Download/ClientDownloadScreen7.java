@@ -5,8 +5,10 @@
  */
 package Client_Download;
 
+import Server_Download.DownloadScreen;
 import static Server_Download.DownloadScreen8.use;
 import Server_Download.DownloadScreen9;
+import Startups.Start;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.event.ComponentAdapter;
@@ -117,6 +119,12 @@ public class ClientDownloadScreen7 extends javax.swing.JFrame {
 //            ds9.setVisible(true);
 //            this.dispose();
 //        });
+        use.delay(5, () ->
+        {
+        Start s = new Start();
+            s.setVisible(true);
+            this.dispose();
+        });
     }//GEN-LAST:event_formWindowActivated
 
     /**

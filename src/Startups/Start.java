@@ -5,6 +5,7 @@
  */
 package Startups;
 
+import Client_Download.ClientDownloadScreen;
 import Server_Download.DownloadScreen;
 import java.awt.Color;
 import java.awt.Image;
@@ -83,6 +84,8 @@ public class Start extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         Button1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        Button2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -104,18 +107,34 @@ public class Start extends javax.swing.JFrame {
         });
         Button1.setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Start");
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel2.setText("Client Download");
+        Button1.add(jLabel2);
+        jLabel2.setBounds(0, 20, 170, 22);
+
+        jPanel1.add(Button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 170, 60));
+
+        Button2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
+                Button2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Button2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Button2MouseExited(evt);
             }
         });
-        Button1.add(jLabel2);
-        jLabel2.setBounds(0, 50, 340, 40);
+        Button2.setLayout(null);
 
-        jPanel1.add(Button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 240, 340, 140));
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Server Download");
+        Button2.add(jLabel3);
+        jLabel3.setBounds(0, 20, 170, 22);
+
+        jPanel1.add(Button2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, 170, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -131,15 +150,12 @@ public class Start extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-        DownloadScreen sd = new DownloadScreen();
-        sd.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jLabel2MouseClicked
-
     private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
-        DownloadScreen sd = new DownloadScreen();
-        sd.setVisible(true);
+//        DownloadScreen sd = new DownloadScreen();
+//        sd.setVisible(true);
+//        this.dispose();
+        ClientDownloadScreen cds = new ClientDownloadScreen();
+        cds.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_Button1MouseClicked
 
@@ -150,6 +166,20 @@ public class Start extends javax.swing.JFrame {
     private void Button1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseExited
         Button1.setBackground(d);
     }//GEN-LAST:event_Button1MouseExited
+
+    private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
+        DownloadScreen ds = new DownloadScreen();
+        ds.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Button2MouseClicked
+
+    private void Button2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseEntered
+        Button2.setBackground(h);
+    }//GEN-LAST:event_Button2MouseEntered
+
+    private void Button2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseExited
+        Button2.setBackground(d);
+    }//GEN-LAST:event_Button2MouseExited
 
     /**
      * @param args the command line arguments
@@ -189,7 +219,9 @@ public class Start extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Button1;
+    private javax.swing.JPanel Button2;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
